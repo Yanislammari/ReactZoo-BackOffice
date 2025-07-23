@@ -1,0 +1,144 @@
+.hero-banner-login {
+  background: linear-gradient(135deg, #1a3d28 0%, #2d5f3f 50%, #4a7c59 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner-top-login {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.login-logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0;
+}
+
+.form-container {
+  background: rgba(26, 61, 40, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #68a77a;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(104, 167, 122, 0.2);
+}
+
+.forgot-password {
+  color: #a8d4b0;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #68a77a;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #68a77a 0%, #4a7c59 100%);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(104, 167, 122, 0.3);
+  background: linear-gradient(135deg, #4a7c59 0%, #68a77a 100%);
+}
+
+.admin-note {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-banner-top-login {
+    top: 30px;
+    left: 20px;
+  }
+
+  .login-logo {
+    font-size: 24px;
+  }
+
+  .form-container {
+    padding: 30px 25px;
+    margin: 0 20px;
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+  }
+
+  .form-group input {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 25px 20px;
+  }
+}

@@ -4,7 +4,7 @@ import './Navbar.css';
 import menuItems from '../constants/MenuItems';
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -51,13 +51,11 @@ const Navbar: React.FC = () => {
           <h1 className="logo">ZooAdmin</h1>
           <nav>
             <ul>
-
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <a onClick={() => handleNavigate(item.path)}>{item.label}</a>
                 </li>
               ))}
-
             </ul>
           </nav>
           <div className={`burger ${isOpen ? 'burger-hidden' : ''}`} onClick={toggleMenu}>
@@ -65,12 +63,10 @@ const Navbar: React.FC = () => {
             <div className={isOpen ? 'line2' : ''}></div>
             <div className={isOpen ? 'line3' : ''}></div>
           </div>
-
           {isOpen && 
             <div className="overlay" onClick={closeMenu}>
             </div>
           }
-
           <div className={`sidebar ${isOpen ? 'sidebar-open' : ''}`}>
             <div className="sidebar-header">
               <h2>ZooAdmin</h2>
@@ -78,7 +74,6 @@ const Navbar: React.FC = () => {
               </button>
             </div>
             <ul>
-
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <a onClick={() => handleNavigate(item.path)}>
@@ -86,7 +81,6 @@ const Navbar: React.FC = () => {
                   </a>
                 </li>
               ))}
-
             </ul>
           </div>
         </div>

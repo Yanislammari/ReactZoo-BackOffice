@@ -14,10 +14,6 @@ header {
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  padding-top: 70px;
-}
-
 header .container {
   display: flex;
   align-items: center;

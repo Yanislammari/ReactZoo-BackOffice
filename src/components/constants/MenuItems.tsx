@@ -7,8 +7,6 @@ const menuItems: MenuItem[] = [
   { path: '/employes', label: 'Employés' },
   { path: '/billets', label: 'Billets' },
   { path: '/settings', label: 'Paramètres' },
-  { path: '/settings', label: 'Paramètre2s' }
-
 ];
 
 export default menuItems;

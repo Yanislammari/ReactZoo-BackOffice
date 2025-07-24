@@ -1,0 +1,126 @@
+.SpacesPage {
+  padding-top: 75px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.spaces-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.spaces-header h1 {
+  color: #2d5f3f;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.spaces-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.spaces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  width: 100%;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #2d5f3f;
+  font-size: 18px;
+}
+
+.no-spaces {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-spaces p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.floating-add-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #2d5f3f;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(45, 95, 63, 0.3);
+  transition: all 0.2s ease;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-add-btn:hover {
+  background: #1e3d2a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 95, 63, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .spaces-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .SpacesPage {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .spaces-header h1 {
+    font-size: 24px;
+  }
+  
+  .spaces-header p {
+    font-size: 14px;
+  }
+  
+  .spaces-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spaces-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .floating-add-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

@@ -19,6 +19,7 @@ const Login: React.FC = () => {
     try {
       const session = await authService.login(email, password);
       const user = await authService.getMe(session);
+      localStorage.setItem("Session", session);
       localStorage.setItem("User", JSON.stringify(user));
       toast.success("Login successful!");
       navigate("/");

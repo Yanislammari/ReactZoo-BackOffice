@@ -1,0 +1,46 @@
+.ZooCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 220px;
+  margin: 16px;
+  border: 2px solid #2d5f3f;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ZooCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(45, 95, 63, 0.2);
+}
+
+.zoo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.zoo-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.zoo-name {
+  text-align: center;
+}
+
+.zoo-name h3 {
+  margin: 0;
+  color: #2d5f3f;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}

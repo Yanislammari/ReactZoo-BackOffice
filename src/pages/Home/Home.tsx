@@ -10,11 +10,6 @@ const Home: React.FC = () => {
   return (
     <div className="Home">
       <Navbar />
-      <AdminCard admin={user} />
-      <AdminCard admin={user} />
-      <AdminCard admin={user} />
-      <AdminCard admin={user} />
-      <AdminCard admin={user} />
 
     </div>
   );

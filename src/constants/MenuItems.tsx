@@ -8,36 +8,16 @@ const menuItems: MenuItem[] = [
   { 
     path: "/zoos", 
     label: "Zoo\'s",
-    subItems: [
-      { 
-        path: "/zoos/gestion",
-        label: "Gestion"
-      },
-      {
-        path: "/zoos/affectations",
-        label: "Affectations"
-      }
-    ],
     isSuperAdmin: true
   },
   { 
     path: "/admins", 
     label: "Admins",
-    subItems : [
-      {
-        path: "/admins/manage",
-        label: "Manage admins"
-      },
-      {
-        path: "/admins/add",
-        label: "Add admin"
-      },
-    ],
     isSuperAdmin: true
   },
   { 
-    path: "/espaces", 
-    label: "Espaces",
+    path: "/spaces", 
+    label: "Spaces",
   },
   { 
     path: "/animaux", 
